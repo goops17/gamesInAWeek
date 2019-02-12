@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\followPlayer.cs" />
+    <Compile Include="Assets\playerCollision.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/gchitaure/Desktop/unityBasicGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

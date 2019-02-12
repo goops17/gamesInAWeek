@@ -32,6 +32,6 @@ public class PlayerMovement : MonoBehaviour
     {
         //adding a forwardForce
         netDir = (leftMove ? -1 : 0) + (rightMove?1:0);
-        rb.AddForce(netDir*movementForce * Time.deltaTime, 0, forwardForce * Time.deltaTime);
+        rb.AddForce(netDir*movementForce * Time.deltaTime, 0, forwardForce * Time.deltaTime, ForceMode.VelocityChange);
     }
 }
