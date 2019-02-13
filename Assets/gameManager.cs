@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class gameManager : MonoBehaviour
 {
-    bool gameEnded=false;
+    bool gameEnded = false;
+    public GameObject completeLevelUI;
     public void gameOver()
     {
         if (!gameEnded)
@@ -17,8 +18,16 @@ public class gameManager : MonoBehaviour
         }
     }
 
+    public void levelComplete()
+    {
+        //display log on game complete
+        Debug.Log("Level complete");
+        completeLevelUI.SetActive(true); 
+    }
+
     void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
 }
